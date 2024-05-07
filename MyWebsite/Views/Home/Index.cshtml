@@ -1,0 +1,385 @@
+﻿<title>@ViewBag.Title</title>
+
+
+<!-- Vendor CSS Files -->
+@*<link href="assets/vendor/aos/aos.css" rel="stylesheet">*@
+
+<link href="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="wwwroot/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+<!--Begin Header-->
+<header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+        <ul>
+            <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+            <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+            @*<li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>*@
+            <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+    </nav><!-- .nav-menu -->
+
+</header>
+<!-- End Header -->
+
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center " style="background-image: url(/wwwroot/Images/crop.jp)">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Ahmed Shaban</h1>
+        <p>I'm 
+            <span class="typed" data-typed-items="@ViewBag.Typed">
+           </span>
+        </p>
+        <div class="social-links">
+            <a href="https://twitter.com/AhmedShaban92" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.facebook.com/bafantastic" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=201062818787&text&app_absent=0" title="Contact me on Whatsapp" class="google-plus"><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/ahmednowar/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/AShaabaan" title="GitHub account" class="linkedin"><i class="bx bxl-github"></i></a>
+            <a href="https://stackoverflow.com/users/17236343/ahmed-shaban" title="stack overflow account" class="linkedin"><i class="bx bxl-stack-overflow"></i></a>
+
+        </div>
+    </div>
+</section>
+<!-- End Hero -->
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>About</h2>
+            <p>
+                My Name is Ahmed Shaban i'm From Egypt
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="/wwwroot/Images/crop.jpg" class="img-fluid" alt="..">
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+                <h3> Software Developer</h3>
+                <p class="fst-italic">
+                    Junior Full Stack Developer
+                </p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+20 1062818787</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Cairo, Egypt</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ahmednowar55@gmail.com</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section><!-- End About Section -->
+<!-- ======= Skills Section ======= -->
+<section id="skills" class="skills section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Skills</h2>
+        </div>
+
+        <div class="row skills-content">
+
+            <div class="col-lg-6">
+
+                <div class="progress">
+                    <span class="skill">HTML <i class="val">100%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <span class="skill">CSS <i class="val">90%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <span class="skill">JavaScript <i class="val">80%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+
+
+                <div class="progress">
+                    <span class="skill">Bootstrap <i class="val">90%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+
+                <div class="progress">
+                    <span class="skill">jQuery<i class="val">60%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <span class="skill">Adobe Xd<i class="val">60%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <span class="skill">photoshop <i class="val">60%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <span class="skill">React<i class="val">70%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ____________________________________________________________________________________________ -->
+
+
+            <div class="col-lg-6">
+
+                <div class="progress">
+                    <span class="skill">Asp.Net Web Api<i class="val">75%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                </div>
+
+
+                <div class="progress">
+                    <span class="skill">Angular<i class="val">75%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                </div>
+
+
+                <div class="progress">
+                    <span class="skill">Asp.Net Mvc/Core<i class="val">80%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <span class="skill">OOP C#<i class="val">85%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <span class="skill">Visual C#<i class="val">75%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <span class="skill">Sql Server<i class="val">80%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <span class="skill">Linq & Entity FrameWork<i class="val">75%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <span class="skill">GitHub<i class="val">80%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Skills Section -->
+<!-- ======= Resume Section ======= -->
+<section id="resume" class="resume">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Resume</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="resume-title">Sumary</h3>
+                <div class="resume-item pb-0">
+                    <h4>Ahmed Shaban</h4>
+                    <p>
+                        <em>
+                            Full Stack Developer Using .Net, Graduated From Faculty of Computer Engineering, Specialist in Information
+                            Technology – Uzhhorod National University in August 2021
+                        </em>
+                    </p>
+                    <ul>
+                        <li>Beheira, Egypt</li>
+                        <li>(+20)1062818787</li>
+                        <li>
+                            ahmednowar55@gmail.com
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 class="resume-title">Education</h3>
+                <div class="resume-item">
+                    <h4><img src="/wwwroot/Images/UzNU_logo.png" style="width:40px; height:50px;" /> Uzhhorod National University</h4>
+                    <h5>2017 - 2021</h5>
+                    <p>Faculty of Computer Engineering, Specialist in Infomation Technology</p>
+                </div>
+
+                <div class="resume-item">
+                    <h4><img src="/wwwroot/Images/CU.png" style="width:40px; height:50px;" />Cairo University</h4>
+                    <p>Bachelor of Computers and Information</p>
+                    <h5>2021</h5>
+
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+
+                <h3 class="resume-title">Professional Experience</h3>
+
+                <div class="resume-item">
+                    <h4><img src="/wwwroot/Images/iti-logo.png" style="width:40px; height:50px;" />   ITI - Information Technology Institute</h4>
+                    <h5>8/2022 </h5>
+                    <p><em>ITI Intensive Trainning FullStack Developmnet Using .Net</em></p>
+
+                </div>
+
+                <div class="resume-item">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section><!-- End Resume Section -->
+<!-- ======= Portfolio Section ======= -->
+    
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-1">
+
+            <div class="col-lg-4">
+                <div class="info">
+                    <div class="address">
+                        <i class="bi bi-geo-alt"></i>
+                        <h4>Location:</h4>
+                        <p>Beheira, Egypt</p>
+                    </div>
+
+                    <div class="email">
+                        <i class="bi bi-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>ahmednowar55@gmail.com</p>
+                    </div>
+
+                    <div class="phone">
+                        <i class="bi bi-phone"></i>
+                        <h4>Call:</h4>
+                        <p>+20 1062818787</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" id="email" placeholder="Message" required></textarea>
+                            <p id="demo"></p>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center" id="send"><button type="submit">Send Message</button></div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Contact Section -->
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="container">
+        <h3>ShabanTech</h3>
+        <p>Professional and Easy Technology</p>
+        <div class="social-links">
+            <a href="https://twitter.com/AhmedShaban92" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.facebook.com/bafantastic" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=201062818787&text&app_absent=0" title="Contact me on Whatsapp" class="google-plus"><i class="bx bxl-whatsapp"></i></a>
+
+            <a href="https://www.linkedin.com/in/ahmednowar/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/AShaabaan" title="GitHub account" class="linkedin"><i class="bx bxl-github"></i></a>
+            <a href="https://stackoverflow.com/users/17236343/ahmed-shaban" title="stack overflow account" class="linkedin"><i class="bx bxl-stack-overflow"></i></a>
+
+        </div>
+
+    </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+<script src="/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="java.js"></script>
