@@ -1,0 +1,342 @@
+﻿
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Media Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
+    <script src="~/lib/font-awesome/js/all.js" crossorigin="anonymous"></script>
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <style>
+        html, body, h1, h2, h3, h4, h5 {
+            font-family: "Open Sans", sans-serif
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark">
+        <div class="container-fluid  ">
+            <a class="btn btn-secondary active  " href="#">
+                <i class="fa fa-home fa-2x"></i> Logo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  position-relative ms-2" id="collapsibleNavbar">
+                <ul class="navbar-nav text-light">
+                    <li class="">
+                        <a class=" btn btn-outline-secondary border-dark " href="#">
+                            <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-secondary border-dark" href="#">
+                            <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-secondary border-dark" href="#"> <i class="fa fa-envelope fa-2x" aria-hidden="true"></i> </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-outline-secondary border-dark dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fa fa-bell  position-relative fa-2x" aria-hidden="true"></i>
+                            <span class="position-absolute   start-25  translate-middle badge rounded-pill bg-success" style="top:5px ;">
+                                2
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Link</a></li>
+                            <li><a class="dropdown-item" href="#">Another link</a></li>
+                            <li><a class="dropdown-item" href="#">A third link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="position-absolute end-0 me-3 ">
+                    <img src="~/Images/on.png" class="rounded-circle" style="height:30px;width:30 px">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Container -->
+    <div class="container" style="max-width:1400px; margin-top:20px">
+        <!-- The Grid -->
+        <div class="row">
+
+            <!-- Left Column -->
+            <div class="col-lg-3 col-md-2">
+                <!-- Profile -->
+                <div class="shadow-lg bg-white rounded">
+                    <div class="container p-3">
+                        <h4 class="text-center pt-2">My Profile</h4>
+                        <p class="text-center"><img src="~/Images/crop.jpg" class="rounded-circle" style="height:120px;width:120px" alt="Avatar"></p>
+                        <hr>
+                        <p><i class="fa fa-pencil fa-fw text-info"></i> Software Developer</p>
+                        <p><i class="fa fa-home fa-fw text-info"></i> London, UK</p>
+                        <p><i class="fa fa-birthday-cake fa-fw text-info"></i> April 24, 1907</p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Accordion -->
+                <div class="">
+                    <div class="shadow-lg bg-light rounded">
+                        <button onclick="toggle('Demo1')" class="col-lg-12 mb-2 btn btn-outline-secondary border-white"><i class="fa fa-circle-o-notch fa-fw"></i>&nbsp; My Groups</button>
+                        <div id="Demo1" class="d-none container">
+                            <p>Some text..</p>
+                        </div>
+                        <button onclick="toggle('Demo2')" class="col-lg-12 mb-2 btn btn-outline-secondary border-white d-block"><i class="fa fa-calendar-check-o fa-fw"></i>&nbsp; My Events</button>
+                        <div id="Demo2" class="d-none container">
+                            <p>Some other text..</p>
+                        </div>
+                        <button onclick="toggle('Demo3')" class="col-lg-12 mb-2 btn btn-outline-secondary border-white d-block"><i class="fa fa-users fa-fw"></i>&nbsp; My Photos</button>
+                        <div id="Demo3" class="d-none container">
+                            <div class="row">
+                                <br>
+                                <div class="col">
+                                    <img src="~/Images/on.png" style="width:100%" class="mb-3 mt-3">
+                                </div>
+                                <div class="col">
+                                    <img src="~/Images/b.jpg" style="width:100%" class="mb-3 mt-3">
+                                </div>
+                                <div class="col">
+                                    <img src="~/Images/g.jpg" style="width:100%" class="mb-3 mt-3">
+                                </div>
+                                <div class="col">
+                                    <img src="~/Images/on.png" style="width:100%" class="mb-3 mt-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Interests -->
+                <div class="card-body bg-light shadow-lg rounded">
+                    <div class="container p-3">
+                        <p>Interests</p>
+                        <div class="flex-wrap d-flex inline row p-2">
+                            <p class="ms-3 p-1 col">Sport</p>
+                            <p class="ms-3 p-1 col">Coding</p>
+                            <p class="ms-3 p-1 col">Games</p>
+                            <p class="ms-3 p-1 col">Tech</p>
+                            <p class="ms-3 p-1 col">Friends</p>
+                            <p class="ms-3 p-1 col">Games</p>
+                            <p class="ms-3 p-1 col">Friends</p>
+                            <p class="ms-3 p-1 col">Food</p>
+                            <p class="ms-3 p-1 col">Design</p>
+                            <p class="ms-3 p-1 col">Photos</p>
+                            <p class="ms-3 p-1 col-8">Art</p>
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Alert -->
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Hi Ahmed!</strong> People are looking at your profile. Find out who.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Middle Column -->
+            <div class="col-lg-7 col-md-8">
+
+                <div class="row">
+                    <div class="shadow-lg rounded bg-light">
+                        <div class="container p-3">
+                            <h5 class="fw-lighter fw-bold mb-3">Create a Post . . . </h5>
+                            <input type="text" value="" placeholder="what's in your mind ?" class="container border p-2">
+                            <button type="button" class="mt-4 btn btn-secondary"><i class="fa fa-pencil"></i> &nbsp;Post</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="container shadow-lg rounded bg-light mt-4">
+                        <br>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="./Ps-img.png" alt="Avatar" class="rounded-circle mx-3" style="height:60px; width:60px;">
+                                <h4 class="d-inline">Ahmed Shaban</h4>
+                            </div>
+                            <span>1 min</span>
+                        </div>
+                        <hr>
+                        <h6 class="text-end">يرجع هانى يمشى هانى يمشى هانى.. حط الكوره.. يوصل كورة تمشى بإنطلاقة عن طريق الهجوم.. حط الكورة يلعب الكورة لحسين الشحات.. شحات ل هانى.. هانى ولا اخر الهجمات.. يلعب الكورة ل مروان.. ضيييع فرص ولكن قد يخطف الأغلى الغالية… والكورة ذكريات وهدف وليست ذكريات و فرص مهدورة يا مروان</h6>
+                        <h6 style="color:black ;" class="text-end">ترجع الكورة بإنطلاق طارق حامد… من تراه على الأعناق بهدف البطولة يا ساده…يرجع بالكورة بإنطلاق عن طريق وسط الميدان… يلعب النادى الاهلى.. الوسط احسن الآن..</h6>
+                        <h6 style="color: red;" class="text-end">الكورة تمشى والانطلاق عن طريق على.. على يمشى باليسار مجبتوش..تماس للمعلول كوره ل على ٨٦ دقيقه الاكسراتيم قريب ولكن احذروا ال K.O ااحذروا ال K.O.</h6>
+
+                        <h6 class="text-end">ترجع الكورة بالراس، القاضية ممكن ..القاضية ممكن.. شاط الكورة وجوول القاضية ممكن ، القاضية ممكن ..القاضية ممكن..</h6>        <h6></h6>
+                        <h6 class="text-end">سجلها الولد معلول ، سجلها علي معلول.. ملك الحلول</h6>
+                        <h6 class="text-end">Oui يا علي Oui , Oui يا علي Oui , Oui يا علي Oui , Oui يا علي Oui. علي Oui , معلول Oui .. والكورة Yes ، الكورة Sí.</h6>
+                        <h6 style="color: red;" class="text-end">هل هو معلول أم لا؟ أي قذيفة جاءت؟ أي قذيفة جاءت يا باتشيكو؟ التاسعة يا الأهلي ، التاسعة يا الأهلي، لا هو تسعتاش ، هو قفشة ، هو ولدنا قفشة..هو الولد قفشة ، هو قفشة ، هو قفشة.. هو قفشة ما لها من عبسة، حط الكورة الثانية ويا لها من صرخة.. كي جولاثو يا قفشة، كي جولاثو يا قفشة.</h6>
+
+                        <div class="row" style="margin:0 -14px">
+                            <div class="col-6">
+                                <img src="~/Images/85.jpg" style="width:100%" alt="ko" class=" rounded">
+                            </div>
+                            <div class="col-6">
+                                <img src="~/Images/85.45.jpg" style="width:100%" alt="Ko" class="rounded">
+                            </div>
+                        </div>
+                        <button type="button" class="mt-4 btn btn-secondary mb-3"><i class="fa fa-thumbs-up"></i> &nbsp;Like</button>
+                        <button type="button" class="mt-4 btn btn-secondary mb-3"><i class="fa fa-comment"></i> &nbsp;Comment</button>
+                    </div>
+
+                    <div class="container shadow-lg rounded bg-light mt-4">
+                        <br>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="~/Images/afsha.png" alt="Avatar" class="rounded-circle mx-3" style="width:60px ;height: 60px;">
+                                <h4 class="d-inline">Magdy Afsha</h4>
+                            </div>
+                            <span>85.45 min</span>
+                        </div>
+
+                        <br>
+                        <hr>
+                        <h3 class="text-end">هل هو معلول ام لا ... ؟؟</h3>
+                        <button type="button" class="mt-4 btn btn-secondary mb-3"><i class="fa fa-thumbs-up"></i> &nbsp;Like</button>
+                        <button type="button" class="mt-4 btn btn-secondary mb-3"><i class="fa fa-comment"></i> &nbsp;Comment</button>
+                    </div>
+
+                    <div class="container shadow-lg rounded bg-light mt-4">
+                        <br>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="~/Images/treka.png" alt="Avatar" class="rounded-circle mx-3" style="width:60px;height: 60px;">
+                                <h4 class="d-inline">Abo Treka</h4><br>
+                            </div>
+                            <span>92 min</span>
+                        </div>
+
+                        <hr>
+                        <p>Have you seen this ?</p>
+
+                        <h3 class="text-end">شادي محمد كورة طويلة في عرض الدفاع لمسة من عماد متعب مرتدة ... تصووووب اووو جووووول جوول جوول الهدف الاول للنادي الاهلي محمد ابو تركسيكة يخطف الهدف هدف غااالي جداا فرحة كبيرة في الجهااز الفني </h3>
+
+                        <div class="row p-3" style="margin:0 -14px">
+
+                            <div class="col-6">
+                                <img src="~/Images/Screenshot 2022-11-11 194358.png" style="width:100% ;height: 100%;" alt="ll" class="mb-2 rounded">
+                            </div>
+                            <div class="col-6">
+                                <img src="~/Images/Screenshot 2022-11-11 194420.png" style="width:100%; height:100%;" alt="sa" class="mb-2 rounded">
+                            </div>
+                            <div>
+                                <button type="button" class="mt-4 btn btn-secondary"><i class="fa fa-thumbs-up"></i> &nbsp;Like</button>
+                                <button type="button" class="mt-4 btn btn-secondary"><i class="fa fa-comment"></i> &nbsp;Comment</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Middle Column -->
+            <!-- Right Column -->
+            <div class="col-lg-2 col-md-2">
+                <div class="shadow-lg rounded bg-white">
+                    <div class="container">
+                        <p class="text-center pt-3">Upcoming Events:</p>
+                        <img src="~/Images/qatar.png" class="rounded" alt="qatar" style="width:100%;">
+                        <div class="text-center pt-3">
+                            <p><strong>Ready</strong></p>
+                            <p>Friday 15:00</p>
+                            <p><button class="mb-3 btn btn-secondary">Info</button></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shadow-lg rounded bg-white">
+                    <div class="container text-center pt-2">
+                        <p class="pt-2">Friend Request</p>
+                        <img src="~/Images/bill gates.png" class="rounded" alt="Avatar" style="width:50%"><br>
+                        <b>Bill Gates</b>
+                        <div class="row">
+                            <div class="mt-2">
+                                <button class="btn btn-primary mb-3" title="Accept"><i class="fa fa-check"></i>Accept</button>
+                                <button class="btn btn-danger mb-3" title="Decline"><i class="fa fa-remove"></i>Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="shadow-lg rounded bg-white">
+                    <div class="container text-center pt-2">
+                        <p class="pt-2">Friend Request</p>
+                        <img src="~/Images/ssss.png" class="rounded" alt="Avatar" style="width:50%"><br>
+                        <b>Abdelfatah Elsisi</b>
+                        <div class="row">
+                            <div class="mt-2">
+                                <button class="btn btn-primary mb-3" title="Accept"><i class="fa fa-check"></i>Accept</button>
+                                <button class="btn btn-danger mb-3" title="Decline"><i class="fa fa-remove"></i>Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded card text-center p-4">
+                    <p>ADS</p>
+                </div>
+                <br>
+
+                <div class="rounded card text-center p-4">
+
+                    <p class="text-center pt-3"><i class="fa fa-bug w3-xxlarge"></i></p>
+                    <div class="text-center ">ADS</div>
+                </div>
+
+
+                <!-- End Right Column -->
+            </div>
+        </div>
+
+        <!-- End Grid -->
+    </div>
+
+    <!-- End Page Container -->
+    </div>
+    <br>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center bg-info">
+        <p>Find me on social media.</p>
+        <a href="https://www.facebook.com/bafantastic" blank="_blank"><i class="fa fa-facebook-official"></i></a>
+        <i class="fa fa-instagram "></i>
+        <i class="fa fa-snapchat "></i>
+        <i class="fa fa-pinterest-p"></i>
+        <a href=""><i class="fa fa-twitter "></i></a>
+        <a href="https://www.linkedin.com/in/ahmednowar/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <p>Powered by <a href="http://AhmedShaban.somee.com" target="_blank">ahmedshaban.some.com</a></p>
+    </footer>
+
+    <script>
+
+        // Accordion
+
+        function toggle(id) {
+            document.getElementById(id).classList.toggle("d-none")
+        }
+
+    </script>
+
+</body>
+</html>

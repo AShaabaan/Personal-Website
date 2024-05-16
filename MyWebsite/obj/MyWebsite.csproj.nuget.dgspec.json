@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Institute\\_FINAL PROJECT MY OWN COPY\\New folder\\MyWebsite\\MyWebsite\\MyWebsite.csproj": {}
+    "F:\\Institute\\_FINAL PROJECT MY OWN COPY\\For Fun GItHub\\MyWebsite\\MyWebsite\\MyWebsite.csproj": {}
   },
   "projects": {
-    "F:\\Institute\\_FINAL PROJECT MY OWN COPY\\New folder\\MyWebsite\\MyWebsite\\MyWebsite.csproj": {
+    "F:\\Institute\\_FINAL PROJECT MY OWN COPY\\For Fun GItHub\\MyWebsite\\MyWebsite\\MyWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Institute\\_FINAL PROJECT MY OWN COPY\\New folder\\MyWebsite\\MyWebsite\\MyWebsite.csproj",
+        "projectUniqueName": "F:\\Institute\\_FINAL PROJECT MY OWN COPY\\For Fun GItHub\\MyWebsite\\MyWebsite\\MyWebsite.csproj",
         "projectName": "MyWebsite",
-        "projectPath": "F:\\Institute\\_FINAL PROJECT MY OWN COPY\\New folder\\MyWebsite\\MyWebsite\\MyWebsite.csproj",
+        "projectPath": "F:\\Institute\\_FINAL PROJECT MY OWN COPY\\For Fun GItHub\\MyWebsite\\MyWebsite\\MyWebsite.csproj",
         "packagesPath": "C:\\Users\\shado\\.nuget\\packages\\",
-        "outputPath": "F:\\Institute\\_FINAL PROJECT MY OWN COPY\\New folder\\MyWebsite\\MyWebsite\\obj\\",
+        "outputPath": "F:\\Institute\\_FINAL PROJECT MY OWN COPY\\For Fun GItHub\\MyWebsite\\MyWebsite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shado\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,6 +48,10 @@
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
             }
           },
           "imports": [
